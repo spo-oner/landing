@@ -176,14 +176,17 @@ body {
     -webkit-background-size: cover;
     background-size: cover;
     padding-bottom: 0;
+    margin-bottom: 60px;
+}
+
+.section--grey {
+    background-color: #f8f8f8;
 }
 
 .section-header {
     width: 100%;
     max-width: 950px;
     margin: 0 auto 50px;
-    
-    
     text-align: center;
 }
 
@@ -360,14 +363,122 @@ body {
     z-index: 1;
 }
 
+/* We do */
+.wedo {
+    display: flex;
+    
+}
 
+.wedo--item {
+    width: 50%;
+    
+}
 
+/* Accordion */
 
+.accordion--icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
 
+.accordion--item {
+    border: 1px solid #e5e5e5;
+    margin: 10px;
+}
 
+.accordion--item.active 
+.accordion--content {
+    display: block;
+    border-bottom: 3px solid #e5e5e5;
+}
 
+.accordion--item.active 
+.accordion--header:after {
+    transform: translateY(-50%) rotate(-45deg);
+}
 
+.accordion--header {
+    cursor: pointer;
+    padding: 15px 20px 15px 65px;
+    position: relative;
+    border-bottom: 3px solid transparent;
+}
 
+.accordion--header:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(135deg); 
+    margin-top: 5px;
+}
+
+.accordion--content {
+    display: none;
+    padding: 15px 20px;
+    color: #999;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.accordion--title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    
+}
+
+/* Review */
+
+.reviews {
+    padding: 0 110px;
+}
+
+.reviews--item {
+    padding-left: 205px;
+    position: relative;
+}
+
+.reviews--photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews--text {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+}
+
+.reviews--author:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-right: 10px;
+    
+}
+
+.reviews--author {
+    font-size: 24px;
+    font-family: 'Neucha', cursive;
+    color: #333;
+}
 
 
 
